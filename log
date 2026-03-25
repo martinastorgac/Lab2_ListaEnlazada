@@ -16,3 +16,20 @@ Wed Mar 25 02:05:48 PM UTC 2026:
  tests:  1|5
 total_score: 10/60
 952a0ef
+Wed Mar 25 02:09:27 PM UTC 2026: 
+ list.c | 13 +++++++++++--
+ 1 file changed, 11 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:52:9: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   52 |     if (lista)
+      |         ^~~~~
+      |         list
+list.c:52:9: note: each undeclared identifier is reported only once for each function it appears in
+list.c: In function ‘nextList’:
+list.c:63:9: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   63 |     if (lista)
+      |         ^~~~~
+      |         list
+a919aa9
