@@ -81,6 +81,18 @@ void * nextList(List * list) {
 //   - La segunda función retorna el dato del nodo anterior a current y actualiza el current para que apunte a ese nodo.
 
 void * lastList(List * list) {
+
+    if (list->current)
+    {
+        Node *aux = malloc(sizeof(Node)) ;
+        aux = list->current ;
+        while (aux->next != NULL) 
+            {
+                aux = aux->next ;
+            }
+        list->current = aux ;
+        return list->current->data ;
+    }
     return NULL;
 }
 
