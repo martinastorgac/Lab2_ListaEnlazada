@@ -143,7 +143,7 @@ void pushCurrent(List * list, void * data) {
     if (list->current)
     {
         list->current->next = newNode ;
-        list->tail = list->current->next
+        list->tail = list->current->next ;
         list->current->next->data = data ;
         list->current->next->prev = list->current ;
         list->current = list->current->next ;
@@ -166,19 +166,7 @@ void * popBack(List * list) {
 // Nota: El current debe quedar apuntando al nodo siguiente del eliminado.
 
 void * popCurrent(List * list) {
-    if (list->current)
-    {
-        if (list->current->next)
-        {
-            
-        }
-        list->current->prev->next = list->current->next ;
-        list->current->next->prev = list->current->prev ;
-        list->current = list->current->next ;
-        
-    
-        return list->current->data ;
-    }
+  
     
 
     

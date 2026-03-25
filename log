@@ -223,3 +223,9 @@ list.c:146:41: error: expected ‘;’ before ‘list’
   147 |         list->current->next->data = data ;
       |         ~~~~                             
 c8c6fc8
+Wed Mar 25 05:41:20 PM UTC 2026: 
+ list.c | 14 +-------------
+ 1 file changed, 1 insertion(+), 13 deletions(-)
+ tests:  11|1
+total_score: 50/60
+74cb4b4
