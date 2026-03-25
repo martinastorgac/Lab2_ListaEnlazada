@@ -50,32 +50,29 @@ List * createList() {
 
 void * firstList(List * list) {
 
-    if (list)
+    if (list->current)
     {
-        if (list->current)
+        if (list->head)
         {
-            if (list->head)
-            {
-                list->current = list->head ;
-                return list->current->data ;
-            }
+            list->current = list->head ;
+            return list->current->data ;
         }
     }
+    
     return NULL;
 }
 
 void * nextList(List * list) {
-    if (list)
+    
+    if (list->current)
     {
-        if (list->current)
+        if (list->current->next) 
         {
-            if (list->current->next) 
-            {
-                list->current = list->current->next ;
-                return list->current->data ;
-            }
+            list->current = list->current->next ;
+            return list->current->data ;
         }
     }
+    
     return NULL;
 }
 
