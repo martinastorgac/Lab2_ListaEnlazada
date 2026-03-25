@@ -210,3 +210,16 @@ Wed Mar 25 05:40:11 PM UTC 2026:
  1 file changed, 1 insertion(+)
  tests:  0|0
 033bc98
+Wed Mar 25 05:40:58 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:146:41: error: expected ‘;’ before ‘list’
+  146 |         list->tail = list->current->next
+      |                                         ^
+      |                                         ;
+  147 |         list->current->next->data = data ;
+      |         ~~~~                             
+c8c6fc8
