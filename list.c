@@ -164,7 +164,7 @@ void * popCurrent(List * list) {
         list->current->prev->prev->next = list->current ;
         
     
-        return copiaNodo->dato ;
+        return copiaNodo->data ;
     }
     
 
