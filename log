@@ -141,3 +141,13 @@ list.c:164:12: error: returning ‘int’ from a function with return type ‘vo
   164 |     return dato ;
       |            ^~~~
 3af8843
+Wed Mar 25 03:02:54 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:164:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Wint-conversion]
+  164 |     return *dato ;
+      |            ^~~~~
+004bbe2
