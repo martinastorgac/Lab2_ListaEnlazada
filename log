@@ -1,0 +1,12 @@
+Wed Mar 25 02:05:30 PM UTC 2026: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:38:9: error: ‘list’ undeclared (first use in this function); did you mean ‘List’?
+   38 |         list->head = NULL ;
+      |         ^~~~
+      |         List
+list.c:38:9: note: each undeclared identifier is reported only once for each function it appears in
+bfc2cbf
