@@ -52,7 +52,7 @@ void * firstList(List * list) {
     if (list)
     {
         list->current = list->head ;
-        return list->current->dato ;
+        return list->current->data ;
     }
 
     return NULL;
@@ -63,7 +63,7 @@ void * nextList(List * list) {
     if (list)
     {
         list->current = list->current->next ;
-        return list->current->dato ;
+        return list->current->data ;
     }
     return NULL;
 }
