@@ -151,3 +151,15 @@ list.c:164:12: error: returning ‘int’ from a function with return type ‘vo
   164 |     return *dato ;
       |            ^~~~~
 004bbe2
+Wed Mar 25 03:03:11 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:164:12: error: dereferencing ‘void *’ pointer [-Werror]
+  164 |     return *dato ;
+      |            ^~~~~
+list.c:164:12: error: void value not ignored as it ought to be
+cc1: all warnings being treated as errors
+9d61e48
