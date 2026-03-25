@@ -163,3 +163,14 @@ list.c:164:12: error: dereferencing ‘void *’ pointer [-Werror]
 list.c:164:12: error: void value not ignored as it ought to be
 cc1: all warnings being treated as errors
 9d61e48
+Wed Mar 25 03:15:28 PM UTC 2026: 
+ list.c | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:167:27: error: ‘Node’ has no member named ‘dato’; did you mean ‘data’?
+  167 |         return copiaNodo->dato ;
+      |                           ^~~~
+      |                           data
+d3f2e7d
