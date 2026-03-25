@@ -52,10 +52,13 @@ void * firstList(List * list) {
 
     if (list)
     {
-        if (list->head)
+        if (list->current)
         {
-            list->current = list->head ;
-            return list->current->data ;
+            if (list->head)
+            {
+                list->current = list->head ;
+                return list->current->data ;
+            }
         }
     }
     return NULL;
@@ -64,14 +67,14 @@ void * firstList(List * list) {
 void * nextList(List * list) {
     if (list)
     {
-    if (list->current->next)
-    {
-        if (list->current->next) 
+        if (list->current)
         {
-            list->current = list->current->next ;
-            return list->current->data ;
+            if (list->current->next) 
+            {
+                list->current = list->current->next ;
+                return list->current->data ;
+            }
         }
-    }
     }
     return NULL;
 }
