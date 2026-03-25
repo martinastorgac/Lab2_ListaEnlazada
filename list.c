@@ -35,10 +35,10 @@ List * createList() {
     List* lista = malloc(sizeof(List)) ;
     if (lista) 
     {
-        list->head = NULL ;
-        list->tail = NULL ;
-        list->current = NULL ;
-        return list ;
+        lista->head = NULL ;
+        lista->tail = NULL ;
+        lista->current = NULL ;
+        return lista ;
     }
     
      return NULL;
