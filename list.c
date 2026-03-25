@@ -169,11 +169,13 @@ void * popCurrent(List * list) {
 
     Node *eliminado = malloc(sizeof(Node)) ;
 
+    eliminado->data = list->current->data ;
+
     list->current->prev->next = list->current->next ;
     list->current->next->prev = list->current->prev ;
 
-    eliminado->data = list->current->data ;
     list->current = list->current->next ;
+    
     return eliminado->data ;
     
     
