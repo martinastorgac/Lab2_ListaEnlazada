@@ -101,7 +101,8 @@ void * prevList(List * list) {
     {
         if (list->current != list->head)
         {
-            return list->current->prev->data ;
+            list->current = list->current->prev ;
+            return list->current->data ;
         }
 
         return NULL ;
