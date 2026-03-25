@@ -39,3 +39,19 @@ Wed Mar 25 02:10:10 PM UTC 2026:
  tests:  1|5
 total_score: 10/60
 d3712f2
+Wed Mar 25 02:12:30 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:55:31: error: ‘Node’ has no member named ‘dato’; did you mean ‘data’?
+   55 |         return list->current->dato ;
+      |                               ^~~~
+      |                               data
+list.c: In function ‘nextList’:
+list.c:66:31: error: ‘Node’ has no member named ‘dato’; did you mean ‘data’?
+   66 |         return list->current->dato ;
+      |                               ^~~~
+      |                               data
+bcb8013
