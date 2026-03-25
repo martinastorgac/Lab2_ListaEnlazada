@@ -190,3 +190,8 @@ list.c:158:5: error: ‘copiaNodo’ undeclared (first use in this function)
       |     ^~~~~~~~~
 list.c:158:5: note: each undeclared identifier is reported only once for each function it appears in
 c83ca08
+Wed Mar 25 05:24:08 PM UTC 2026: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+e8fb597

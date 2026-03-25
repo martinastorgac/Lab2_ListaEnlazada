@@ -141,6 +141,7 @@ void pushBack(List * list, void * data) {
 void pushCurrent(List * list, void * data) {
 }
 
+
 void * popFront(List * list) {
     list->current = list->head;
     return popCurrent(list);
@@ -155,7 +156,6 @@ void * popBack(List * list) {
 // Nota: El current debe quedar apuntando al nodo siguiente del eliminado.
 
 void * popCurrent(List * list) {
-    copiaNodo = list->current ;
     if (list->current)
     {
         if (list->current->next)
