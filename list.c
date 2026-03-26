@@ -178,6 +178,11 @@ void * popCurrent(List * list) {
     if (eliminado->next)
     {
         eliminado->next->prev = eliminado->prev ;
+        list->current = eliminado->next ;
+    }
+    else
+    {
+        list->current = eliminado->prev ;
     }
 
     free(eliminado) ;
