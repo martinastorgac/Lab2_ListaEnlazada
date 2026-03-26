@@ -173,6 +173,7 @@ void * popCurrent(List * list) {
     if ((eliminado->prev) && (!eliminado->next))
     {
         eliminado->prev->next = NULL ;
+        list->tail = eliminado->prev ;
     }
 
     else if ((!eliminado->prev) && (eliminado->next)) {
