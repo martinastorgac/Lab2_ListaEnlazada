@@ -174,26 +174,26 @@ void * popCurrent(List * list) {
     {
         eliminado->prev->next = NULL ;
         list->tail = eliminado->prev ;
+        list->current = eliminado->prev ;
     }
 
     else if ((!eliminado->prev) && (eliminado->next)) {
         list->head = eliminado->next ;
         eliminado->next->prev = NULL ;
+        list->current = eliminado->next ;
     }
     else if ((!eliminado->prev) && (!eliminado->next))
     {
         list->current = NULL ;
+        list->head = NULL ;
+        list->tail = NULL ;
     }
 
-    else if (eliminado->next)
+    else (eliminado->next)
     {
         eliminado->next->prev = eliminado->prev ;
         eliminado->prev->next = eliminado->next ;
         list->current = eliminado->next ;
-    }
-    else
-    {
-        list->current = eliminado->prev ;
     }
 
     free(eliminado) ;
