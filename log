@@ -254,3 +254,16 @@ Wed Mar 25 06:29:03 PM UTC 2026:
  1 file changed, 9 insertions(+), 1 deletion(-)
  tests:  0|0
 da59d9a
+Thu Mar 26 12:56:01 PM UTC 2026: 
+ list.c | 21 ++++++++++++---------
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:173:11: error: redefinition of ‘eliminado’
+  173 |     Node *eliminado = list->current ;
+      |           ^~~~~~~~~
+list.c:170:11: note: previous definition of ‘eliminado’ with type ‘Node *’
+  170 |     Node *eliminado = list->current ;
+      |           ^~~~~~~~~
+9b54ccf
