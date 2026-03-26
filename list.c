@@ -180,6 +180,10 @@ void * popCurrent(List * list) {
         list->head = eliminado->next ;
         eliminado->next->prev = NULL ;
     }
+    else if ((!eliminado->prev) && (!eliminado->next))
+    {
+        list->current = NULL ;
+    }
 
     else if (eliminado->next)
     {
