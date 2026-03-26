@@ -189,7 +189,7 @@ void * popCurrent(List * list) {
         list->tail = NULL ;
     }
 
-    else (eliminado->next)
+    else
     {
         eliminado->next->prev = eliminado->prev ;
         eliminado->prev->next = eliminado->next ;
