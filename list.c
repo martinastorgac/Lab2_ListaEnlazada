@@ -170,8 +170,6 @@ void * popCurrent(List * list) {
     Node *eliminado = list->current ;
     void *datoEliminado = eliminado->data ;
 
-    Node *eliminado = list->current ;
-
     if (eliminado->prev)
     {
         eliminado->prev->next = eliminado->next ;

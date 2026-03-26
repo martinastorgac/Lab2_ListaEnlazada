@@ -267,3 +267,8 @@ list.c:170:11: note: previous definition of ‘eliminado’ with type ‘Node *�
   170 |     Node *eliminado = list->current ;
       |           ^~~~~~~~~
 9b54ccf
+Thu Mar 26 12:56:31 PM UTC 2026: 
+ list.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  0|0
+e9c13c2
