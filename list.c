@@ -183,6 +183,7 @@ void * popCurrent(List * list) {
     else if (eliminado->next)
     {
         eliminado->next->prev = eliminado->prev ;
+        eliminado->prev->next = eliminado->next ;
         list->current = eliminado->next ;
     }
     else
